@@ -24,6 +24,10 @@ const PizzaCard = (props) => {
     const handleUpdate = (id)=>{
       navigate(`/pizza/${id}/edit`)
     }
+
+    const handleView = (id)=>{
+      navigate(`/pizza/${id}`)
+    }
   return (
     <div className="pizza-card">
         <h3>Name:{name}</h3>
@@ -38,6 +42,8 @@ const PizzaCard = (props) => {
         <div>
           <button className="danger" onClick={()=>handleDelete(_id)}>Delete Pizza</button>
           <button className="success" onClick={()=>handleUpdate(_id)}>Update Pizza</button>
+          <button className="success" onClick={()=>handleView(_id)}>View Pizza</button>
+
         </div>
         
     </div>

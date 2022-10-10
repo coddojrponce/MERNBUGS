@@ -31,7 +31,8 @@ const GetAll = (props) => {
 // ***************************Error with map , due to not returning
           listOfPizzas.map((item,index)=>(
 // ***************************Props being passed with incorrect names
-            <PersonCard 
+            <PersonCard
+
             key={index}
             name={item.name} 
             crust={item.crust} 
