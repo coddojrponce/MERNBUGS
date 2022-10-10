@@ -40,6 +40,7 @@ module.exports = {
     },
     //UPDATE
     update:(req,res)=>{
+        // ***************************Error with validations on update being misspelled 
         Pizza.findOneAndUpdate({_id:req.params.id},req.body,{new:true,runValidators:true})
         .then((updatedPizza)=>{
             res.status(200).json({updatedPizza})

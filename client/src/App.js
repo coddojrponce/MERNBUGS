@@ -9,6 +9,7 @@ import Update from './components/Update'
 function App() {
   return (
     <div className="App">
+{/****************************Legacy Router being uses instead of this one */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to="/pizza"/>}/>

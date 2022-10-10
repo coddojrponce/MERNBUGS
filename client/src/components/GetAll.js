@@ -15,6 +15,7 @@ const GetAll = (props) => {
     .catch((err)=>{
       console.log(err)
     })
+// ***************************Error with dependency missing causing it to loop 
   },[])
 
 
@@ -27,8 +28,9 @@ const GetAll = (props) => {
         {
 
           listOfPizzas.length > 0 ?
-
+// ***************************Error with map , due to not returning
           listOfPizzas.map((item,index)=>(
+// ***************************Props being passed with incorrect names
             <PersonCard 
             key={index}
             name={item.name} 
